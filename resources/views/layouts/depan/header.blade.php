@@ -93,8 +93,9 @@
                                     </div>
                                 </div> --}}
                                 <a href="{{ route('kontak', []) }}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
+                                <a href="{{ route('cari', []) }}" class="nav-item nav-link {{ request()->routeIs('cari') ? 'active' : '' }}">Cari Aduan</a>
                             </div>
-                            <a href="{{ route('login') }}" class="btn btn-primary mr-3 d-none d-lg-block">Login</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary mr-3 d-none d-lg-block">Daftar atau Masuk</a>
                         </div>
                     </nav>
                 </div>

@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,12 @@ Route::get('/anggota', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
+
+Route::get('/cari', function () {
+    return view('cari');
+})->name('cari');
+
+Route::post('/cari', [PostController::class, 'cari'])->name('cari');
 
 Auth::routes();
 Route::group(['middleware' => 'auth'], function (){

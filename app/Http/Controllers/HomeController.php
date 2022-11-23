@@ -31,11 +31,11 @@ class HomeController extends Controller
         // dd($data);
         // $email = auth()->user()->name;
         // dd($email);
-        
+
         return view('admin.home');
-        
-        
-        
+
+
+
     }
     public function masyarakatHome(){
         return view('masyarakat.home');
@@ -46,11 +46,13 @@ class HomeController extends Controller
     public function logout(Request $request)
     {
         $this->guard()->logout();
- 
+
         $request->session()->flush();
- 
+
         $request->session()->regenerate();
- 
+
         return redirect('home');
     }
+
+
 }
