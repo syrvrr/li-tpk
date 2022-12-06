@@ -20,8 +20,8 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Hasil yang diharapkan</h4>
-                            <h3 class="display-2 text-capitalize text-white mb-4">Kami Siap Untuk Mu</h3>
-                            <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('kontak', []) }}">Hubungi Kami Sekarang</a>
+                            <h3 class="display-2 text-capitalize text-white mb-4">Kami Siap Untuk Anda</h3>
+                            {{-- <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('kontak', []) }}">Hubungi Kami Sekarang</a> --}}
                         </div>
                     </div>
                 </div>
