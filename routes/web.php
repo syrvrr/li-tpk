@@ -35,11 +35,11 @@ Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
 
-Route::get('/cari', function () {
-    return view('cari');
-})->name('cari');
+// Route::get('/cari', function () {
+//     return view('cari');
+// })->name('cari');
 
-Route::post('/cari', [PostController::class, 'cari'])->name('cari');
+// Route::post('/cari', [PostController::class, 'search'])->name('search');
 
 Auth::routes();
 Route::group(['middleware' => 'auth'], function (){

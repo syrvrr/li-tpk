@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Register | {{ config('app.name') }}</title>
+    <title>Pendaftaran | {{ config('app.name') }}</title>
     <meta name="description" content="CoreUI Template - InfyOm Laravel Generator">
     <meta name="keyword" content="CoreUI,Bootstrap,Admin,Template,InfyOm,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
 
@@ -25,8 +25,9 @@
                 <div class="card-body p-4">
                     <form method="post" action="{{ url('/register') }}">
                         @csrf
-                        <h1>Register</h1>
-                        <p class="text-muted">Create your account</p>
+                        <img class="img-fluid rounded" src="img/logo.png" alt="" width="150">
+                        <h1>Form Registrasi</h1>
+                        <p class="text-muted">Buat akun Pengaduan</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -35,7 +36,7 @@
                             </div>
                             <input type="text" class="form-control @error('name') is-invalid @enderror"
                                    name="name" value="{{ old('name') }}"
-                                   placeholder="Full Name">
+                                   placeholder="Nama Lengkap">
                             @error('name')
                             <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
@@ -71,10 +72,10 @@
                               </span>
                             </div>
                             <input type="password" name="password_confirmation" class="form-control"
-                                   placeholder="Confirm password">
+                                   placeholder="Konfirmasi password">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
-                        <a href="{{ route('login') }}" class="text-center">I already have a membership</a>
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Registrasi</button>
+                        <a href="{{ route('login') }}" class="text-center">Sudah punya akun?</a>
                     </form>
                 </div>
             </div>

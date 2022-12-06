@@ -23,10 +23,11 @@
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-6 py-5">
                     <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
-                        <h1 class="text-center text-white mb-4">Buat akun untuk pengaduan</h1>
-                        <form action="{{ route('cari') }}" method="POST">
+                        <h1 class="text-center text-white mb-4">Cari Laporan Anda</h1>
+
+                        <form action="{{ route('/cari') }}" method="post">
                             <div class="form-group input-group mb-3">
-                                <input name="cari" type="number" class="form-control border-0 p-4" placeholder="Tulis Kode Aduan Anda" aria-label="Tulis Kode Aduan Anda" aria-describedby="button1" required="required" />
+                                <input name="search" type="number" class="form-control border-0 p-4" placeholder="Tulis Kode Aduan Anda" aria-label="Tulis Kode Aduan Anda" aria-describedby="button1" required="required" />
                             </div>
                             <div>
                                 <button class="btn btn-primary btn-block border-0 py-3" type="submit" id="button1">Cari</button>

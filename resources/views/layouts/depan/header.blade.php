@@ -93,7 +93,6 @@
                                     </div>
                                 </div> --}}
                                 <a href="{{ route('kontak', []) }}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
-                                <a href="{{ route('cari', []) }}" class="nav-item nav-link {{ request()->routeIs('cari') ? 'active' : '' }}">Cari Aduan</a>
                             </div>
                             <a href="{{ route('login') }}" class="btn btn-primary mr-3 d-none d-lg-block">Daftar atau Masuk</a>
                         </div>
@@ -132,39 +131,36 @@
                 <div class="col-lg-6 py-5">
                     <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
                         <h1 class="text-center text-white mb-4">Buat akun untuk pengaduan</h1>
-                        <form>
+                        <form  method="post" action="{{ url('/register')}} ">
+                            @csrf
                             <div class="form-group">
-                                <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
-                            </div>
-                            <div class="form-row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <div class="date" id="date" data-target-input="nearest">
-                                            <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <div class="time" id="time" data-target-input="nearest">
-                                            <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input type="text" class="form-control border-0 p-4 @error('name') is-invalid @enderror " placeholder="Nama Lengkap" required="required" name="name" />
+                                @error('name')
+                                    <div class="invalid-feedback"> {{ $message }} </div>
+                                @enderror
                             </div>
                             <div class="form-group">
-                                <select class="custom-select border-0 px-4" style="height: 47px;">
-                                    <option selected>Select A Service</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 1</option>
-                                    <option value="3">Service 1</option>
-                                </select>
+                                <input type="email" class="form-control border-0 p-4 @error('email')
+                                    is-invalid
+                                @enderror" name="email" placeholder="Email" required="required" />
+                                @error('email')
+                                    <div class="invalid-feedback"> {{ $message }} </div>
+                                @enderror
                             </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control border-0 p-4 @error('password')
+                                    is-invalid
+                                @enderror" name="password" placeholder="Password" required="required" />
+                                @error('password')
+                                    <div class="invalid-feedback"> {{ $message }} </div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control border-0 p-4" name="password_confirmation" placeholder="Konfirmasi Password" required="required" />
+                            </div>
+
                             <div>
-                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Get An Appointment</button>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Daftar dan Buat Aduan</button>
                             </div>
                         </form>
                     </div>
