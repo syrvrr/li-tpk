@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Pengaduan; 
+use App\Models\Pengaduan;
 use Carbon\Carbon;
 use App\Models\Bukti;
 use Illuminate\Support\Facades\Validator;
@@ -18,7 +18,7 @@ class PengaduanController extends Controller
         $users = User::with(['pengaduan'])->find(Auth::id());
         return view('masyarakat.pengaduan', compact('users'));
     }
-    public function create(){ 
+    public function create(){
         return view('masyarakat.add_pengaduan');
     }
     public function add(Request $request){
@@ -48,7 +48,7 @@ class PengaduanController extends Controller
                 $bukti->bukti = $filename;
                 $bukti->kode_pengaduan = $pengaduan->kode;
                 $bukti->save();
-                return redirect('admin/pengaduan');
+                return redirect('home/pengaduan');
         }
 
     }
@@ -61,11 +61,11 @@ class PengaduanController extends Controller
         $user->isi = $request->isi;
         $user->judul = $request->judul;
         $user->save();
-        return redirect('/home/pengaduan');
+        return redirect('home/pengaduan');
     }
     public function destroy($kode){
         $pengaduan = Pengaduan::find($kode);
         $pengaduan->delete();
-        return redirect('/home/pengaduan');
+        return redirect('home/pengaduan');
     }
 }

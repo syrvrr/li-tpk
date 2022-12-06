@@ -11,20 +11,12 @@
         <div class="col-3">
             <select class="form-control select2" style="width: 100%;" name="user">
                 <option value="" selected></option>
-          
+
                 @foreach($users as $user)
                      <option value="{{$user->id}}">{{$user->name}}</option>
                 @endforeach
-          
+
               </select>
-        </div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="col-2">
-            <label for="isi" class="col-form-label">Isi Pengaduan</label>
-        </div>
-        <div class="col-3">
-            <input type="textarea" name="isi" class="form-control" value="{{ old('isi') }}">
         </div>
     </div>
     <div class="input-group mb-3">
@@ -37,7 +29,16 @@
     </div>
     <div class="input-group mb-3">
         <div class="col-2">
+            <label for="isi" class="col-form-label">Isi Pengaduan</label>
+        </div>
+        <div class="col-3">
+            <input type="textarea" name="isi" class="form-control" value="{{ old('isi') }}">
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <div class="col-2">
             <label for="filename" class="col-form-label">{{ __('File') }}</label>
+            <span>file harus berbentuk ppt,pptx,doc,docx,pdf,xls,xlsx</span>
         </div>
         <div class="col-3">
             <input type="file" name="file">
