@@ -92,7 +92,7 @@
                                         <a href="#" class="dropdown-item">Menu Item 3</a>
                                     </div>
                                 </div> --}}
-                                <a href="{{ route('kontak', []) }}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a>
+                                {{-- <a href="{{ route('kontak', []) }}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a> --}}
                             </div>
                             <a href="{{ route('login') }}" class="btn btn-primary mr-3 d-none d-lg-block">Daftar atau Masuk</a>
                         </div>

@@ -31,9 +31,9 @@ Route::get('/anggota', function () {
     return view('anggota');
 })->name('anggota');
 
-Route::get('/kontak', function () {
-    return view('kontak');
-})->name('kontak');
+// Route::get('/kontak', function () {
+//     return view('kontak');
+// })->name('kontak');
 
 // Route::get('/cari', function () {
 //     return view('cari');
