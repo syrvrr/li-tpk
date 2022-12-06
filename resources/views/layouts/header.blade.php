@@ -14,9 +14,9 @@
 <ul class="c-header-nav">
     <li class="c-header-nav-item dropdown">
         <a class="c-header-nav-link dropbtn" id="dropdownMenuButton1" data-bs-toggle="dropdown" href="#" role="button"
-           aria-haspopup="true" aria-expanded="false"> 
+           aria-haspopup="true" aria-expanded="false">
             <div class="c-avatar">
-                <p>{{auth()->user()->name}}</p>
+                <p class="btn btn-primary mr-3 ">{{auth()->user()->name}}</p>
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dropdownMenuButton1">

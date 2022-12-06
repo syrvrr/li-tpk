@@ -94,7 +94,12 @@
                                 </div> --}}
                                 {{-- <a href="{{ route('kontak', []) }}" class="nav-item nav-link {{ request()->routeIs('kontak') ? 'active' : '' }}">Kontak</a> --}}
                             </div>
+                            @if (auth()->check())
+                                <a href="/home/pengaduan" class="btn btn-primary mr-3 d-none d-lg-block">Profile {{auth()->user()->name}}</a>
+                            @else
+
                             <a href="{{ route('login') }}" class="btn btn-primary mr-3 d-none d-lg-block">Daftar atau Masuk</a>
+                            @endif
                         </div>
                     </nav>
                 </div>
