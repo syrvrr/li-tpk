@@ -18,7 +18,7 @@
             <label for="title" class="col-form-label">Judul</label>
         </div>
         <div class="col-3">
-            <input type="text" name="judul" class="form-control" value="{{ old('judul') }}">
+            <input type="text" name="judul" class="form-control" value="{{ old('judul') }}" required>
         </div>
     </div>
     <div class="input-group mb-3">
@@ -26,7 +26,7 @@
             <label for="isi" class="col-form-label" rows="3">Isi Pengaduan</label>
         </div>
         <div class="col-3">
-            <textarea class="form-control" rows="3" type="textarea" name="isi" class="form-control" value="{{ old('isi') }}"></textarea>
+            <textarea class="form-control" rows="3" type="textarea" name="isi" class="form-control" value="{{ old('isi') }}" required></textarea>
 
         </div>
     </div>
@@ -35,7 +35,7 @@
             <label for="filename" class="col-form-label">{{ __('File') }}</label>
         </div>
         <div class="col-3">
-            <input type="file" name="file">
+            <input type="file" name="file" required>
             <br><span>file harus ppt,pptx,doc,docx,pdf,xls,xlsx max ukuran 2MB  </span>
         </div>
     </div>
