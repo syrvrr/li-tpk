@@ -74,7 +74,7 @@
                             <input type="password" name="password_confirmation" class="form-control"
                                    placeholder="Konfirmasi password">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Registrasi</button>
+                        <button type="submit" class="btn btn-warning text-white btn-block btn-flat">Registrasi</button>
                         <a href="{{ route('login') }}" class="text-center">Sudah punya akun?</a>
                     </form>
                 </div>

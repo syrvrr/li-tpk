@@ -9,14 +9,16 @@
         data-class="c-sidebar-lg-show" responsive="true">
     <i class="c-icon c-icon-lg cil-menu"></i>
 </button>
+<div class="mfs-auto mt-3 mr-5">Powered by&nbsp;<a href="https://mujaka.net/">Mujaka Team</a></div>
 <ul class="c-header-nav mfs-auto">
 </ul>
 <ul class="c-header-nav">
     <li class="c-header-nav-item dropdown">
         <a class="c-header-nav-link dropbtn" id="dropdownMenuButton1" data-bs-toggle="dropdown" href="#" role="button"
            aria-haspopup="true" aria-expanded="false">
+
             <div class="c-avatar">
-                <p class="btn btn-primary mr-3 ">{{auth()->user()->name}}</p>
+                <p class="btn btn-primary mr-4 mt-2 ">{{auth()->user()->name}}</p>
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="dropdownMenuButton1">

@@ -44,11 +44,15 @@
                         <div class="col-lg-7 text-left">
                             <div class="h-100 d-inline-flex align-items-center py-2 px-3">
                                 <i class="fa fa-envelope text-primary mr-2"></i>
-                                <small>info@example.com</small>
+                                <small>info@email.com</small>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2 px-2">
                                 <i class="fa fa-phone-alt text-primary mr-2"></i>
                                 <small>+6212 3456 7890</small>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                                <i class="fa fa-phone-alt text-primary mr-2"></i>
+                                <small><div class="mfs-auto">Powered by&nbsp;<a href="https://mujaka.net/">Mujaka Team</a></div></small>
                             </div>
                         </div>
                         <div class="col-lg-5 text-right">
@@ -463,7 +467,8 @@
                 <p class="m-0 text-white">&copy; <a class="font-weight-bold" href="#">Lembaga Tindak Pindana Korupsi (LI-TPK)</a>. All Rights Reserved.</p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="m-0 text-white"> Made with ❤️ </p>
+                <p class="m-0 text-white"> Made with ❤️  </p>
+                <div class="mfs-auto">Powered by&nbsp;<a href="https://mujaka.net/">Mujaka Team</a></div>
             </div>
         </div>
     </div>

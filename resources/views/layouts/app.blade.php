@@ -10,7 +10,7 @@
     <!-- CoreUI CSS -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
           crossorigin="anonymous"/>
@@ -18,7 +18,7 @@
     @yield('third_party_stylesheets')
 
     @stack('page_css')
- 
+
 </head>
 
 <body class="c-app">
@@ -33,13 +33,13 @@
     <div class="c-body">
         <main class="c-main">
             @yield('content')
-            
-        </main> 
+
+        </main>
     </div>
 
     <footer class="c-footer">
-        <div><a href="https://coreui.io">CoreUI</a> © 2020 creativeLabs.</div>
-        <div class="mfs-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
+        <div> LI-TPK Palembang © 2022.</div>
+        <div class="mfs-auto">Powered by&nbsp;<a href="https://mujaka.net/">Mujaka Team</a></div>
     </footer>
 </div>
 <script>
